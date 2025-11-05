@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timer and Countdown</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Timer and Countdown</h1>
+      <div id="menu">
+        <button id="btnCronometro">Cronómetro</button>
+        <button id="btnTemporizador">Temporizador</button>
+      </div>
+
+      <!-- Cronómetro -->
+      <div id="cronometro" class="hidden">
+        <div class="display" id="cronometroDisplay">00:00:00.<span class="milliseconds">000</span></div>
+        <div class="buttons">
+          <button id="startCrono">Iniciar</button>
+          <button id="pauseCrono" class="hidden">Pausar</button>
+          <button id="resumeCrono" class="hidden">Continuar</button>
+          <button id="resetCrono">Reiniciar</button>
+        </div>
+      </div>
+
+      <!-- Temporizador -->
+      <div id="temporizador" class="hidden">
+        <div class="display" id="temporizadorDisplay">00:00:00.<span class="milliseconds">000</span></div>
+        <div id="numpad" class="numpad">
+          <div class="numpad-row">
+            <button class="num">5</button>
+            <button class="num">6</button>
+            <button class="num">7</button>
+            <button class="num">8</button>
+            <button class="num">9</button>
+            <button id="setTime">Establecer</button>
+          </div>
+          <div class="numpad-row">
+            <button class="num">0</button>
+            <button class="num">1</button>
+            <button class="num">2</button>
+            <button class="num">3</button>
+            <button class="num">4</button>
+            <button id="clearTime" class="clear">Borrar</button>
+          </div>
+        </div>
+
+        <div class="buttons hidden" id="timerControls">
+          <button id="startTimer">Iniciar</button>
+          <button id="pauseTimer" class="hidden">Pausar</button>
+          <button id="resumeTimer" class="hidden">Continuar</button>
+          <button id="resetTimer">Reiniciar</button>
+        </div>
+      </div>
+
+      <button id="btnRegresar" class="hidden regresar">Regresar</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
