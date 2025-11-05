@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f0f0;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .container {
+    max-width: 500px;
+    margin: auto;
+    background: white;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+  }
+  
+  .display {
+    background: #e8ebff;
+    border: 3px solid #888;
+    border-radius: 15px;
+    font-size: 3em;
+    font-weight: bold;
+    padding: 20px;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+  }
+  
+  .display .milliseconds {
+    font-size: 0.35em;
+    vertical-align: middle;
+  }
+  
+  button {
+    font-size: 1.1em;
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  button:hover {
+    opacity: 0.9;
+  }
+  
+  #menu button {
+    background-color: #4caf50;
+    color: white;
+    width: 45%;
+  }
+  
+  .buttons button {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  /* Botones Iniciar - verde vibrante con texto negro */
+  #startCrono,
+  #startTimer {
+    background-color: #00ff00;
+    color: black;
+    font-weight: bold;
+  }
+  
+  /* Botones Reiniciar - rojo vibrante con texto negro */
+  #resetCrono,
+  #resetTimer {
+    background-color: #ff0000;
+    color: black;
+    font-weight: bold;
+  }
+  
+  .clear {
+    background-color: gray !important;
+    color: white;
+  }
+  
+  .numpad {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .numpad-row {
+    display: flex;
+    justify-content: center;
+    margin: 5px 0;
+  }
+  
+  .numpad button {
+    background-color: #00cc00;
+    color: black;
+    font-weight: bold;
+    width: 60px;
+    height: 50px;
+  }
+  
+  #temporizadorDisplay.alerta {
+    animation: parpadeo 1s infinite alternate;
+  }
+  
+  @keyframes parpadeo {
+    0% { background: red; color: white; }
+    100% { background: white; color: red; }
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .regresar {
+    background-color: #ff9800;
+    color: white;
+    width: 80%;
+    margin-top: 20px;
+  }
+  
